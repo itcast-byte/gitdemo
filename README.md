@@ -1,3 +1,3 @@
 # gitdemo
 local git
-remote git1
+remote git2
