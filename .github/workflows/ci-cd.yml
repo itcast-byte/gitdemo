@@ -33,7 +33,7 @@ jobs:
       # 步骤 5：推送 Docker 镜像
       - name: Push Docker image
         run: |
-          docker push my-app:$GITHUB_SHA
+          docker push devone930/demo:$GITHUB_SHA
 
   deploy:
     runs-on: ubuntu-latest
