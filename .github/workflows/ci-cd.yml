@@ -21,7 +21,7 @@ jobs:
       # 步骤 3：构建 Docker 镜像
       - name: Build Docker image
         run: |
-          docker build -t devone930/demop:$GITHUB_SHA .
+          docker build -t devone930/demo:$GITHUB_SHA .
 
       # 步骤 4：登录 Docker Hub（如果需要推送到 Docker Hub）
       - name: Log in to Docker Hub
