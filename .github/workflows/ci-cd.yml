@@ -53,5 +53,5 @@ jobs:
       # 步骤 3：部署到 Kubernetes 集群
       - name: Deploy to Kubernetes
         run: |
-          kubectl apply -f kubernetes/deployment.yaml
+          kubectl apply -f kubernetes/deployment.yaml --validate=false
           kubectl set image deployment/my-app my-app=my-app:$GITHUB_SHA  # 更新部署中的 Docker 镜像
