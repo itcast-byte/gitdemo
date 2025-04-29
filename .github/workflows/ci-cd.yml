@@ -46,7 +46,7 @@ jobs:
 
       # 步骤 2：设置 kubectl（用于与 Kubernetes 交互）
       - name: Set up kubectl
-        uses: actions/setup-kubectl@v2
+        uses: azure/setup-kubectl@v3
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}  # 使用 GitHub Secrets 中存储的 kubeconfig
 
